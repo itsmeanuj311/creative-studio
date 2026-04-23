@@ -1,4 +1,7 @@
 import useMacbookStore from "../store";
+import {Canvas} from "@react-three/fiber";
+import {Box, OrbitControls} from "@react-three/drei";
+
 import clsx from "clsx";
 
 const ProductViewer = () => {
@@ -39,6 +42,12 @@ const ProductViewer = () => {
                     </div>
                 </div>
             </div>
+
+            <Canvas id="canvas"  >
+              <Box position={[0,0,0]} scale={10* scale} material-color={color}></Box>
+            </Canvas>
+
+
     </section>
   );
 };
