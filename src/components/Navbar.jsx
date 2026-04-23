@@ -5,6 +5,7 @@ const Navbar = () => {
   return (
     <header>
       <nav>
+        <img src="/logo.svg" alt="Apple logo" />
         <ul>
           {navLinks.map(({ label }) => (
             <li key={label}>
@@ -17,7 +18,7 @@ const Navbar = () => {
             <img src="/search.svg" alt="Search" />
           </button>
           <button>
-            <img src="./cart.svg" alt="Cart" />
+            <img src="/cart.svg" alt="Cart" />
           </button>
         </div>
       </nav>
